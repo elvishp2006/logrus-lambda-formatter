@@ -12,11 +12,11 @@ const (
 	defaultTimestampFormat = time.RFC3339
 )
 
-type LambdaFormatter struct {
+type Formatter struct {
 	logrus.JSONFormatter
 }
 
-func (f *LambdaFormatter) Format(entry *logrus.Entry) ([]byte, error) {
+func (f *Formatter) Format(entry *logrus.Entry) ([]byte, error) {
 	serialized, err := f.JSONFormatter.Format(entry)
 
 	timestampFormat := f.TimestampFormat
