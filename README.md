@@ -31,4 +31,4 @@ Above sample will produce:
 Note that the requestId is used for compose the message in a format that will be interpreted by CloudWatch
 
 ## License
-This project is under MIT License.
+This project is under [MIT License](./LICENSE.md).
